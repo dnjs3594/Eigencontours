@@ -3,7 +3,6 @@
 # [CVPR 2022(oral)] Eigencontours: Novel Contour Descriptors Based on Low-Rank Approximation
 ### Wonhui Park, Dongkwon Jin, and Chang-Su Kim
 
-<img src="https://github.com/dnjs3594/Eigencontours/Overview.png" alt="overview" width="90%" height="90%" border="10"/>
 Official implementation for **"Eigencontours: Novel Contour Descriptors Based on Low-Rank Approximation"** 
 [[paper]](https://arxiv.org/abs/2203.15259).
 
