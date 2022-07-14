@@ -76,9 +76,9 @@ $ cd ROOT/Preprocessing/code_v1_COCO/
 $ python main.py --mode encoding --dim M (ex:36) --display False
 ```
 
-Optionally, you can adjust image size and threshold IoU (in "encoding") in 'ROOT/Preprocessing/code_v1_COCO/options/config.py'.
+Optionally, you can adjust image size and threshold IoU (in "encoding") in `ROOT/Preprocessing/code_v1_COCO/options/config.py`.
 
-In paper, objects are cropped and centerally allgned for evaluating. If you want to preprocess data in crop version, you replace "datasets.dataset_coco_not_crop" with "dataset.dataset_coco" in 'ROOT/Preprocessing/code_v1_COCO/libs/prepare.py'.
+In paper, objects are cropped and centerally allgned for evaluating. If you want to preprocess data in crop version, you replace "datasets.dataset_coco_not_crop" with "dataset.dataset_coco" in `ROOT/Preprocessing/code_v1_COCO/libs/prepare.py`.
 
 
 ### Reference
