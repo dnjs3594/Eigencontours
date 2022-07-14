@@ -24,7 +24,7 @@ class Config(object):
 
         # dataloader
         self.gpu_id = "0"
-        self.num_workers = 0
+        self.num_workers = 4
         self.batch_size = 1
 
         # constant
@@ -36,11 +36,11 @@ class Config(object):
         self.max_dist = math.sqrt(self.width / 2 * self.width / 2 + self.height / 2 * self.height / 2)
 
         self.dim = 36
-        self.data_flip = False
+  
         self.thresd_iou = 0.85
 
         # visualization
-        self.display = True
+        self.display = False
 
         # save
         self.save_pickle = True
