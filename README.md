@@ -18,6 +18,31 @@ Congratulations to my eigenbrother!
 - CuDNN >= 7.6.5
 - python >= 3.6
 
+### Installation
+1. Download repository. We call this directory as `ROOT`:
+```
+$ git clone https://github.com/dnjs3594/Eigencontours.git
+```
+
+2. Download [preprocessed-data] (https://drive.google.com/file/d/12FETybRT2QdNRFuknHPM0tCzA-5ID1MB/view?usp=sharing) in `ROOT`:
+```
+$ cd ROOT
+$ unzip pretrained.zip
+$ unzip preprocessed.zip
+```
+4. Create conda environment:
+```
+$ conda create -n eigenlanes python=3.7 anaconda
+$ conda activate eigenlanes
+```
+4. Install dependencies:
+```
+$ conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
+$ pip install -r requirements.txt
+```
+
+
+
 ### Reference
 ```
 @Inproceedings{
