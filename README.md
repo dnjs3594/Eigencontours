@@ -9,7 +9,7 @@ Official implementation for **"Eigencontours: Novel Contour Descriptors Based on
 [[paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Park_Eigencontours_Novel_Contour_Descriptors_Based_on_Low-Rank_Approximation_CVPR_2022_paper.pdf) [[arxiv]](https://arxiv.org/abs/2203.15259) [[video]](https://www.youtube.com/watch?v=nneyhWCQY-s)
 
 ### Related work
-We wil also present another paper, **"Eigenlanes: Data-Driven Lane Descriptors for Structurally Diverse Lanes"**, accepted to CVPR 2022 (oral) [[paper]](https://arxiv.org/abs/2203.15302) [[arxiv]](https://arxiv.org/abs/2203.15302) [[video]](https://www.youtube.com/watch?v=XhEj3o3iihQ) [[github]] (https://github.com/dongkwonjin/Eigenlanes).
+We wil also present another paper, **"Eigenlanes: Data-Driven Lane Descriptors for Structurally Diverse Lanes"**, accepted to CVPR 2022 (oral) [[paper]](https://arxiv.org/abs/2203.15302) [[arxiv]](https://arxiv.org/abs/2203.15302) [[video]](https://www.youtube.com/watch?v=XhEj3o3iihQ) [[github]](https://github.com/dongkwonjin/Eigenlanes).
 Congratulations to my eigenbrother!
 
 ### Requirements
