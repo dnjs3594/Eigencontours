@@ -1,4 +1,6 @@
 from libs.utils import *
+import numpy as np
+import torch
 
 class SVD(object):
 
@@ -40,11 +42,11 @@ class SVD(object):
         self.mat = load_pickle(self.cfg.output_dir + 'matrix')
 
         n, l = self.mat.shape
-        idx = torch.linspace(0, l-1, 40000).type(torch.int64).cuda()
-        U, S, V = torch.svd(self.mat[:, idx].cpu() / (self.cfg.max_dist))
-        self.U = U.cuda()
-        self.S = S.cuda()
-        self.V = V.cuda()
+        # idx = torch.linspace(0, l-1, 40000).type(torch.int64).cuda()
+        U, S, V = np.linalg.svd(self.mat[:, idx].cpu().numpy() / (self.cfg.max_dist), full_matrices=False)
+        self.U = torch.from_numpy(U).cuda()
+        self.S = torch.from_numpy(S).cuda()
+        # self.V = V.cuda()
 
         if self.cfg.save_pickle == True:
             save_pickle(dir_name=self.cfg.output_dir,
