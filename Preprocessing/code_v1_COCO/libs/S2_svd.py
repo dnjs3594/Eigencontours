@@ -43,7 +43,7 @@ class SVD(object):
 
         n, l = self.mat.shape
         # idx = torch.linspace(0, l-1, 40000).type(torch.int64).cuda()
-        U, S, V = np.linalg.svd(self.mat[:, idx].cpu().numpy() / (self.cfg.max_dist), full_matrices=False)
+        U, S, V = np.linalg.svd(self.mat.cpu().numpy() / (self.cfg.max_dist), full_matrices=False)
         self.U = torch.from_numpy(U).cuda()
         self.S = torch.from_numpy(S).cuda()
         # self.V = V.cuda()
