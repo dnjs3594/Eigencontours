@@ -44,9 +44,6 @@ $ pip install -r requirements.txt
 
 5. Optional install dependencies:
 Our framework for instance segmentation is based on [mmdetection](https://github.com/open-mmlab/mmdetection). Please check [mmdetection.md](https://github.com/dnjs3594/Eigencontours/blob/master/mmdetection.md) for installation instructions.
-```
-$ pip install -r requirements_ins_seg.txt
-```
 
 
 ### Directory structure
