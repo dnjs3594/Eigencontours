@@ -18,10 +18,10 @@ We have tested the following versions of OS and softwares:
 
 ### Install mmdetection
 
-a. Create a conda virtual environment and activate it. Then install Cython.
+a. Move instance segmentation root and install Cython.
 
 ```shell
-
+cd Root/instance_segmentation
 conda install cython
 pip install mmcv==0.2.14
 ```
@@ -36,6 +36,14 @@ cd mmdetection
 c. Install mmdetection (other dependencies will be installed automatically).
 
 ```shell
+python setup.py develop
+# or "pip install -v -e ."
+```
+
+d. Install other modules.
+
+```shell
+cd ..
 python setup.py develop
 # or "pip install -v -e ."
 ```
