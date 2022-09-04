@@ -24,7 +24,7 @@ Congratulations to my eigenbrother!
 $ git clone https://github.com/dnjs3594/Eigencontours.git
 ```
 
-2. Download [preprocessed-data] (https://drive.google.com/file/d/12FETybRT2QdNRFuknHPM0tCzA-5ID1MB/view?usp=sharing) in `ROOT/Preprocessing/code_v1_COCO`:
+2. Download [preprocessed-data](https://drive.google.com/file/d/12FETybRT2QdNRFuknHPM0tCzA-5ID1MB/view?usp=sharing) in `ROOT/Preprocessing/code_v1_COCO`:
 ```
 $ cd ROOT/Preprocessing/code_v1_COCO
 $ unzip data.zip
@@ -43,7 +43,6 @@ $ pip install -r requirements.txt
 ```
 
 5. Optional install dependencies:
-
 Our PolarMask is based on [mmdetection](https://github.com/open-mmlab/mmdetection). Please check [mmdetection.md](https://github.com/dnjs3594/Eigencontours/edit/master/mmdetection.md) for installation instructions.
 ```
 $ pip install -r requirements_ins_seg.txt
