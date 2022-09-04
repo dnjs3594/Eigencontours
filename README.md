@@ -63,6 +63,7 @@ $ pip install -r requirements_ins_seg.txt
     ├── Instance_segmentation
     │   ├── configs            # configuration for instance segmentation
     │   ├── mmdet              # models
+    │   ├── mmdetection        # installed folder
     │   ├── tools              # execution 
     └── └── ...
     
