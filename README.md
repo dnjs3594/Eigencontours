@@ -59,7 +59,14 @@ $ pip install -r requirements_ins_seg.txt
     │   │   │   ├──train2017
     │   │   │   ├──val2017
     │   │   │   └──annotations
-    .   └── ...
+    │   └── ...
+    ├── Instance_segmentation
+    │   ├── configs            # configuration for instance segmentation
+    │   ├── mmdet              # models
+    │   ├── tools              # execution 
+    └── └── ...
+    
+    
 
 ### COCO dataset
 Download COCO dataset in `ROOT/Preprocessing/data as directory structure:
