@@ -29,16 +29,25 @@ $ git clone https://github.com/dnjs3594/Eigencontours.git
 $ cd ROOT/Preprocessing/code_v1_COCO
 $ unzip data.zip
 ```
+
 3. Create conda environment:
 ```
 $ conda create -n eigencontours python=3.7 anaconda
 $ conda activate eigencontours
 ```
+
 4. Install dependencies:
 ```
 $ conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch
 $ pip install -r requirements.txt
 ```
+
+5. Optional install dependencies:
+Our PolarMask is based on [mmdetection] (https://github.com/open-mmlab/mmdetection). Please check [INSTALL.md] (https://github.com/dnjs3594/Eigencontours/edit/master/mmdetection.md) for installation instructions.
+```
+$ pip install -r requirements_ins_seg.txt
+```
+
 
 ### Directory structure
     .                           # ROOT
@@ -79,6 +88,10 @@ $ python main.py --mode encoding --dim M (ex:36) --display False
 Optionally, you can adjust image size and threshold IoU (in "encoding") in `ROOT/Preprocessing/code_v1_COCO/options/config.py`.
 
 In paper, objects are cropped and centerally allgned for evaluating. If you want to preprocess data in crop version, you replace "datasets.dataset_coco_not_crop" with "dataset.dataset_coco" in `ROOT/Preprocessing/code_v1_COCO/libs/prepare.py`.
+
+### Instance segmentation (PolarMask-based method using "Eigencontours".)
+
+
 
 
 ### Reference
