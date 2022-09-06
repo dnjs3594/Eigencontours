@@ -3,7 +3,7 @@
 ### Requirements
 
 - Linux
-- Python 3.5+ ([Say goodbye to Python2](https://python3statement.org/))
+- Python 3.5+
 - PyTorch 1.0+ or PyTorch-nightly
 - CUDA 9.0+
 - NCCL 2+
