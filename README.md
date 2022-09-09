@@ -58,10 +58,11 @@ Our framework for instance segmentation is based on [mmdetection](https://github
     │   │   │   └──annotations
     │   └── ...
     ├── Instance_segmentation
-    │   ├── configs            # configuration for instance segmentation
-    │   ├── mmdet              # models
-    │   ├── mmdetection        # installed folder
-    │   ├── tools              # execution 
+    │   ├── code_v1_COCO 
+    │   │   ├── configs            # configuration for instance segmentation
+    │   │   ├── mmdet              # models
+    │   │   ├── mmdetection        # installed folder
+    │   │   ├── tools              # execution 
     └── └── ...
     
     
