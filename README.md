@@ -101,7 +101,7 @@ Optionally, you can adjust image size and threshold IoU (in "encoding") in `ROOT
 
 In paper, objects are cropped and centerally allgned for evaluating. If you want to preprocess data in crop version, you replace "datasets.dataset_coco_not_crop" with "dataset.dataset_coco" in `ROOT/Preprocessing/code_v1_COCO/libs/prepare.py`.
 
-### Instance segmentation (PolarMask-based method using "Eigencontours".[[arxiv]](https://arxiv.org/abs/2208.11258))
+### Instance segmentation (PolarMask-based method using "Eigencontours".[[arxiv]](https://arxiv.org/abs/2208.11258)
 We only train models for ResNet50 backbone and single-scale training and single-gpu environment.
 
 1. Train
