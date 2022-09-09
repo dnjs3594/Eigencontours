@@ -21,7 +21,7 @@ We have tested the following versions of OS and softwares:
 a. Move instance segmentation root and install Cython.
 
 ```shell
-cd Root/instance_segmentation
+cd Root/Instance_segmentation/code_v1_COCO
 conda install cython
 pip install mmcv==0.2.14
 ```
