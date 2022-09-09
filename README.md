@@ -45,6 +45,12 @@ $ pip install -r requirements.txt
 5. Optional install dependencies:
 Our framework for instance segmentation is based on [mmdetection](https://github.com/open-mmlab/mmdetection). Please check [mmdetection.md](https://github.com/dnjs3594/Eigencontours/blob/master/mmdetection.md) for installation instructions.
 
+6. Download instance segmentation [checkpoint](https://drive.google.com/file/d/19Pf7qvoqgN--JE9cJN9djKB-AgTTemk8/view?usp=sharing)
+
+```
+$ mkdir checkpoints
+$ mv [download_root] checkpoints
+```
 
 ### Directory structure
     .                           # ROOT
@@ -95,10 +101,21 @@ Optionally, you can adjust image size and threshold IoU (in "encoding") in `ROOT
 
 In paper, objects are cropped and centerally allgned for evaluating. If you want to preprocess data in crop version, you replace "datasets.dataset_coco_not_crop" with "dataset.dataset_coco" in `ROOT/Preprocessing/code_v1_COCO/libs/prepare.py`.
 
-### Instance segmentation (PolarMask-based method using "Eigencontours".)
+### Instance segmentation (PolarMask-based method using "Eigencontours".[[arxiv]](https://arxiv.org/abs/2208.11258))
+We only train models for ResNet50 backbone and single-scale training and single-gpu environment.
 
+1. Train
+```
+$ cd ROOT/Instance_segmentation/code_v1_COCO/tools
+$ python train.py --work_dir <work_dir> --config <config_dir> --data_root <COCO_dir> --resume_from False
+```
+You can adjust more details in a config file. And, <work_dir> is a storage directory for checkpoint.
 
-
+2. Test 
+```
+$ cd ROOT/Instance_segmentation/code_v1_COCO/tools
+$ python test.py --work_dir <work_dir> --checkpoint <ckpt_dir> --config <config_dir> --data_root <COCO_dir> --show False
+```
 
 ### Reference
 ```
